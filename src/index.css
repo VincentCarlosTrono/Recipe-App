@@ -30,16 +30,3 @@ h3 {
   line-height: 2.5rem;
   margin: 2rem 0;
 }
-
-.container {
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns:
-    minmax(1rem, 1fr)
-    minmax(1rem, 1200px)
-    minmax(1rem, 1fr);
-}
