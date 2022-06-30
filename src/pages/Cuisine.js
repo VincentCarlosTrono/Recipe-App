@@ -28,11 +28,12 @@ function Cuisine() {
       transition={{ duration: 0.5 }}
     >
       {cuisine.map((item) => {
+        const { id, title, image } = item;
         return (
           <Card key={item.id}>
-            <Link to={"/recipe/" + item.id}>
-              <img src={item.image} alt={item.id} />
-              <h4>{item.title}</h4>
+            <Link to={"/recipe/" + id}>
+              <img src={image} alt={id} />
+              <h4>{title}</h4>
             </Link>
           </Card>
         );

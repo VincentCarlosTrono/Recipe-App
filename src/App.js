@@ -2,8 +2,8 @@ import "./App.css";
 import Pages from "./pages/Pages";
 import Category from "./components/Category";
 import Search from "./components/Search";
-import styled from "styled-components";
 import Footer from "./components/Footer";
+import styled from "styled-components";
 import { GiKnifeFork } from "react-icons/gi";
 import { Link } from "react-router-dom";
 

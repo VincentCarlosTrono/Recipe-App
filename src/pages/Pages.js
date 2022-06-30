@@ -1,10 +1,10 @@
 import React from "react";
 import Home from "../pages/Home";
 import Cuisine from "../pages/Cuisine";
-import { Route, Routes, useLocation } from "react-router-dom";
 import Searched from "./Searched";
 import Recipe from "./Recipe";
 import { AnimatePresence } from "framer-motion";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 const Pages = () => {
   const location = useLocation();

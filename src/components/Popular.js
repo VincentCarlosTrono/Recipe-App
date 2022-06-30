@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import { Link } from "react-router-dom";
 
 const Popular = () => {
   const [popular, setPopular] = useState([]);
@@ -42,12 +42,13 @@ const Popular = () => {
           }}
         >
           {popular.map((recipe) => {
+            const { id, title, image } = recipe;
             return (
               <SplideSlide>
                 <Card>
-                  <Link to={"/recipe/" + recipe.id}>
-                    <p>{recipe.title}</p>
-                    <img src={recipe.image} alt={recipe.title} />
+                  <Link to={"/recipe/" + id}>
+                    <p>{title}</p>
+                    <img src={image} alt={title} />
                     <Gradient />
                   </Link>
                 </Card>
